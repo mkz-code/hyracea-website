@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="title.s2026">Saison 2026 | HyRaceA</title>
+  <meta name="description" content="Rückblick und Fotos der H2GP-Saison 2026 von HyRaceA.">
+  <link rel="icon" href="img/logo-black.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="i18n.js" defer></script>
+</head>
+<body>
+
+  <header class="nav">
+    <a href="index.html" class="nav-logo"><img src="img/logo-black.svg" alt="HyRaceA"></a>
+    <div class="nav-right">
+      <nav>
+        <a href="index.html" data-i18n="nav.home">Start</a>
+        <a href="index.html#car" data-i18n="nav.car">Auto</a>
+        <a href="index.html#team" data-i18n="nav.team">Team</a>
+        <div class="nav-drop active">
+          <button class="nav-drop-btn" aria-haspopup="true" aria-expanded="false"><span data-i18n="nav.season">Saison</span><svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+          <ul class="nav-drop-menu">
+            <li><a href="index.html#season">2027</a></li>
+            <li><a href="season-2026.html" class="current">2026</a></li>
+            <li><a href="season-2025.html">2025</a></li>
+          </ul>
+        </div>
+        <a href="competition.html" data-i18n="nav.comp">Wettbewerb</a>
+        <a href="index.html#contact" data-i18n="nav.contact">Kontakt</a>
+      </nav>
+      <div class="lang">
+        <button class="lang-btn" aria-haspopup="true" aria-expanded="false" aria-label="Sprache wählen">
+          <span class="flag flag-at"></span><span class="lang-code">DE</span>
+          <svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+        </button>
+        <ul class="lang-menu">
+          <li><button data-lang="de"><span class="flag flag-at"></span>Deutsch</button></li>
+          <li><button data-lang="en"><span class="flag flag-gb"></span>English</button></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-head">
+    <span class="badge" data-i18n="badge.last">Letzte Saison</span>
+    <h1 data-i18n="nav.s2026">Saison 2026</h1>
+    <p data-i18n="s26.lead">Vom Qualifying in Chemnitz bis zum Promo Award beim World Final in Bulle.</p>
+  </div>
+
+  <!-- ===== Rückblick ===== -->
+  <section>
+    <div class="wrap">
+      <h2 data-i18n="s26.recap">Rückblick</h2>
+      <p class="lead" data-i18n="s26.text">Beim Prototype-Qualifying in Chemnitz sind wir mit unserem HyRaceA Aero auf Platz 2 gefahren und haben uns damit das Ticket für das H2 Grand Prix World Final geholt. Für das Finale in Bulle in der Schweiz haben wir ein komplett neues Auto entwickelt: den <strong>Staubsauger 1.0</strong>, mit selbst konstruiertem Chassis, eigener Lenkung und Federung. Beim 10. World Final sind wir auf Platz 8 gefahren und haben den <strong>Promo Award der Prototype-Klasse</strong> gewonnen.</p>
+      <div class="results">
+        <div class="result"><strong data-i18n="r.p2">Platz 2</strong><span>Qualifying Chemnitz</span><small data-i18n="r.d26q">30. Mai 2026</small></div>
+        <div class="result"><strong data-i18n="r.p8">Platz 8</strong><span>World Final Bulle</span><small data-i18n="r.d26w">Juli 2026</small></div>
+        <div class="result award"><strong>Promo Award</strong><span>World Final Bulle</span><small data-i18n="r.proto">Prototype-Klasse</small></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Datenblatt (bewusst grob gehalten) ===== -->
+  <section class="alt">
+    <div class="wrap">
+      <h2 data-i18n="s26.sheet">Datenblatt Staubsauger 1.0</h2>
+      <table class="specs datasheet">
+        <tr><td data-i18n="spec.energy">Energiequelle</td><td data-i18n="s26.d1">Wasserstoff-Brennstoffzelle, rund 30 W</td></tr>
+        <tr><td data-i18n="spec.storage">Energiespeicher</td><td data-i18n="s26.d2">Superkondensatoren als Leistungspuffer</td></tr>
+        <tr><td data-i18n="spec.drive">Antrieb</td><td data-i18n="s26.d3">Elektromotor</td></tr>
+        <tr><td data-i18n="spec.chassis">Chassis</td><td data-i18n="s26.d4">Eigenentwicklung aus Carbon</td></tr>
+        <tr><td data-i18n="spec.body">Karosserie</td><td data-i18n="s26.d5">Eigenbau aus Carbon</td></tr>
+        <tr><td data-i18n="spec.weight">Gewicht</td><td data-i18n="s26.d6">ca. 1,2 kg</td></tr>
+      </table>
+    </div>
+  </section>
+
+  <!-- ===== Fotogalerie =====
+       Weitere Fotos in img/season-2026/ legen und einen Platzhalter so ersetzen:
+       <figure><img src="img/season-2026/name.jpg" alt="Beschreibung"><figcaption>Text</figcaption></figure>
+       -->
+  <section>
+    <div class="wrap">
+      <h2 data-i18n="s26.photos">Fotos</h2>
+      <div class="gallery">
+        <figure class="big"><img src="img/season-2026/hyracea-strecke.jpg" alt="Staubsauger 1.0 auf der Strecke beim World Final" style="object-position:center 60%"><figcaption data-i18n="s26.f1">Auf der Strecke in Bulle</figcaption></figure>
+        <figure><img src="img/season-2026/promo-award-flagge.jpg" alt="Promo-Award, Karosserie und Auto auf der österreichischen Flagge"><figcaption>Promo Award</figcaption></figure>
+        <figure><img src="img/season-2026/promo-award-fribourg.jpg" alt="Promo-Award und Auto vor der Swiss Hydrogen Week Wand" style="object-position:center 75%"><figcaption>Swiss Hydrogen Week</figcaption></figure>
+        <figure><img src="img/season-2026/world-finals-start.jpg" alt="Rennstrecke beim H2GP World Final 2026" style="object-position:center 65%"><figcaption data-i18n="s26.f4">Start im World Final</figcaption></figure>
+        <figure class="wide"><img src="img/season-2026/hyracea-auto-fernsteuerung.jpg" alt="Staubsauger 1.0: Chassis und Karosserie"><figcaption data-i18n="s26.f5">Chassis &amp; Karosserie</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 HyRaceA · TU Graz · <span class="made-in"><span data-i18n="footer.place">Graz, Österreich</span> <span class="flag flag-at"></span></span></p>
+    <p class="footer-links"><a class="icon-link" href="mailto:office@hyracea.tugraz.at"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span>office@hyracea.tugraz.at</span></a> <a class="icon-link" href="https://www.instagram.com/hyracea/" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.3" fill="currentColor"/></svg><span>@hyracea</span></a></p>
+    <p><a href="impressum.html" data-i18n="footer.imprint">Impressum</a> · <a href="datenschutz.html" data-i18n="footer.privacy">Datenschutz</a></p>
+  </footer>
+
+</body>
+</html>

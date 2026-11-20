@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="title.comp">Der Wettbewerb | HyRaceA</title>
+  <meta name="description" content="So funktioniert der H2 Grand Prix: Langstreckenrennen für RC-Autos mit Wasserstoff-Brennstoffzelle.">
+  <link rel="icon" href="img/logo-black.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="i18n.js" defer></script>
+</head>
+<body>
+
+  <header class="nav">
+    <a href="index.html" class="nav-logo"><img src="img/logo-black.svg" alt="HyRaceA"></a>
+    <div class="nav-right">
+      <nav>
+        <a href="index.html" data-i18n="nav.home">Start</a>
+        <a href="index.html#car" data-i18n="nav.car">Auto</a>
+        <a href="index.html#team" data-i18n="nav.team">Team</a>
+        <div class="nav-drop">
+          <button class="nav-drop-btn" aria-haspopup="true" aria-expanded="false"><span data-i18n="nav.season">Saison</span><svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg></button>
+          <ul class="nav-drop-menu">
+            <li><a href="index.html#season">2027</a></li>
+            <li><a href="season-2026.html">2026</a></li>
+            <li><a href="season-2025.html">2025</a></li>
+          </ul>
+        </div>
+        <a href="competition.html" class="active" data-i18n="nav.comp">Wettbewerb</a>
+        <a href="index.html#contact" data-i18n="nav.contact">Kontakt</a>
+      </nav>
+      <div class="lang">
+        <button class="lang-btn" aria-haspopup="true" aria-expanded="false" aria-label="Sprache wählen">
+          <span class="flag flag-at"></span><span class="lang-code">DE</span>
+          <svg viewBox="0 0 10 6"><path d="M1 1l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+        </button>
+        <ul class="lang-menu">
+          <li><button data-lang="de"><span class="flag flag-at"></span>Deutsch</button></li>
+          <li><button data-lang="en"><span class="flag flag-gb"></span>English</button></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-head">
+    <span class="badge" data-i18n="comp.badge">Der Wettbewerb</span>
+    <h1>H2 Grand Prix</h1>
+    <p data-i18n="comp.lead">Eine internationale Rennserie für ferngesteuerte Autos, die nur mit Wasserstoff fahren. Gewinnen kann nur, wer schnell <em>und</em> sparsam ist.</p>
+  </div>
+
+  <!-- ===== Kurz erklärt ===== -->
+  <section>
+    <div class="wrap">
+      <h2 data-i18n="comp.what">Worum geht es?</h2>
+      <p class="lead" data-i18n="comp.whattext">Schul- und Uni-Teams aus der ganzen Welt bauen RC-Rennautos, die ihren Strom aus einer Wasserstoff-Brennstoffzelle bekommen. Gefahren wird kein kurzer Sprint, sondern ein Langstreckenrennen: Der Wasserstoff ist begrenzt, und wer am Ende die meisten Runden geschafft hat, gewinnt. Wir starten in der Klasse <strong>H2 Prototype</strong>, der offensten Klasse, in der das ganze Auto selbst entwickelt werden darf und es keine Batterie gibt, nur Wasserstoff.</p>
+      <div class="stat-row">
+        <div class="stat"><strong>6 h</strong><span data-i18n="comp.s1">Rennen im World Final</span></div>
+        <div class="stat"><strong>32</strong><span data-i18n="comp.s2">Hydrostiks max. pro 6-h-Rennen</span></div>
+        <div class="stat"><strong>0 Wh</strong><span data-i18n="comp.s3">Batterie erlaubt</span></div>
+        <div class="stat"><strong>2,3 kg</strong><span data-i18n="comp.s4">maximales Gewicht</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Ablauf eines Rennens ===== -->
+  <section class="alt">
+    <div class="wrap">
+      <h2 data-i18n="comp.race">So läuft ein Rennen</h2>
+      <div class="steps">
+        <div class="step"><h3 data-i18n="comp.r1">Technische Abnahme</h3><p data-i18n="comp.r1t">Vor dem Start werden Maße, Gewicht und Sicherheit jedes Autos geprüft. Alle Hydrostiks werden abgegeben, Kondensatoren müssen leer sein.</p></div>
+        <div class="step"><h3 data-i18n="comp.r2">Langstrecke</h3><p data-i18n="comp.r2t">Je nach Event 2 bis 6 Stunden mit bis zu 20 Autos auf der Strecke. Mindestens zwei Fahrer pro Team wechseln sich ab.</p></div>
+        <div class="step"><h3 data-i18n="comp.r3">Boxenstopps</h3><p data-i18n="comp.r3t">Ist ein Hydrostik leer, kommt das Auto in die Box und bekommt eine neue Kartusche. Ein schneller, sauberer Wechsel spart wertvolle Zeit.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Weg durch die Saison ===== -->
+  <section>
+    <div class="wrap">
+      <h2 data-i18n="comp.season">Der Weg durch die Saison</h2>
+      <div class="steps">
+        <div class="step"><h3 data-i18n="comp.q">Qualifier</h3><p data-i18n="comp.qt">Regionale Rennen, bei denen sich die besten Teams für die nächste Stufe qualifizieren.</p></div>
+        <div class="step"><h3 data-i18n="comp.n">Nationale Finals</h3><p data-i18n="comp.nt">Je nach Land die nächste Stufe auf dem Weg nach oben.</p></div>
+        <div class="step"><h3>World Final</h3><p data-i18n="comp.wt">Die besten Teams der Welt treffen sich zum 6-Stunden-Rennen. 2026 waren wir dabei und haben den Promo Award gewonnen.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Wertungen ===== -->
+  <section class="alt">
+    <div class="wrap">
+      <h2 data-i18n="comp.awards">Was bewertet wird</h2>
+      <p class="lead" data-i18n="comp.awardslead">Neben dem Rennen selbst gibt es Preise für Technik, Auftritt und Teamarbeit.</p>
+      <div class="grid three">
+        <div class="award main"><h3>Endurance</h3><p data-i18n="comp.a1">Die meisten Runden am Ende des Rennens.</p></div>
+        <div class="award main"><h3>Energy</h3><p data-i18n="comp.a2">Die meisten Runden pro verbrauchtem Hydrostik.</p></div>
+        <div class="award"><h3>Design</h3><p data-i18n="comp.a3">Das beste Aussehen und die beste selbst gebaute Karosserie.</p></div>
+        <div class="award"><h3>Innovation</h3><p data-i18n="comp.a4">Die fortschrittlichsten Ideen, vorgestellt der Jury und im Technical Report.</p></div>
+        <div class="award"><h3>Promo</h3><p data-i18n="comp.a5">Die überzeugendste Präsentation und das beste Team-Video.</p></div>
+        <div class="award"><h3>Pit Stop</h3><p data-i18n="comp.a6">Der schnellste und am besten abgestimmte Boxenstopp.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Wichtigste Regeln für das Auto ===== -->
+  <section>
+    <div class="wrap">
+      <h2 data-i18n="comp.rules">Die wichtigsten Regeln fürs Auto</h2>
+      <ul class="rules">
+        <li data-i18n="comp.l1">Brennstoffzelle H-30 bzw. H-Cell 2.0, Wasserstoff nur aus Hydrostiks</li>
+        <li data-i18n="comp.l2">Chassis darf komplett selbst gebaut werden</li>
+        <li data-i18n="comp.l3">Länge 320 bis 470 mm, Breite 170 bis 220 mm, Höhe max. 170 mm</li>
+        <li data-i18n="comp.l4">Gewicht fahrbereit höchstens 2.300 g</li>
+        <li data-i18n="comp.l5">Kondensatoren erlaubt, aber nur mit Wasserstoff geladen</li>
+        <li data-i18n="comp.l6">Telemetrie ist erlaubt</li>
+        <li class="no" data-i18n="comp.l7">Keine Batterien</li>
+        <li class="no" data-i18n="comp.l8">Keine elektronischen Gyroskope</li>
+      </ul>
+      <p class="source" data-i18n="comp.source">Quelle: H2GP PRO Rulebook 2026/2027, H2 Prototype Class. Alle Details auf <a href="https://www.h2grandprix.com" target="_blank" rel="noopener">h2grandprix.com</a>.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 HyRaceA · TU Graz · <span class="made-in"><span data-i18n="footer.place">Graz, Österreich</span> <span class="flag flag-at"></span></span></p>
+    <p class="footer-links"><a class="icon-link" href="mailto:office@hyracea.tugraz.at"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span>office@hyracea.tugraz.at</span></a> <a class="icon-link" href="https://www.instagram.com/hyracea/" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.3" cy="6.7" r="1.3" fill="currentColor"/></svg><span>@hyracea</span></a></p>
+    <p><a href="impressum.html" data-i18n="footer.imprint">Impressum</a> · <a href="datenschutz.html" data-i18n="footer.privacy">Datenschutz</a></p>
+  </footer>
+
+</body>
+</html>
